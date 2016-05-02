@@ -7,7 +7,13 @@ current environments:
  
 all the environments are registered with the gym when you `import gymn_nastics`
 
-## Blackjack-v0
+## Installation
+
+This is not in pip/pypi yet. Sorry. The easiest way will be to add a subdirectory into your project called `gym_nastics` by downloading the zip here and extracting it or adding a git submodule. 
+
+## Environments
+
+### Blackjack-v0
  - currently a single, freshly shuffled 52 card deck is used each episode/game
  - supports actions Hit (`0`) and Stand (`1`)
  - observation is `Tuple(Discrete(11),Discrete(11))`
@@ -15,6 +21,8 @@ all the environments are registered with the gym when you `import gymn_nastics`
  - your `reward` will be the score of your hand if you beat the dealer and didn't bust
  - the players opening hand will never be a blackjack, those hands require no decisions
  - Splitting and Betting are not supported (yet?)
+ 
+in some trial runs a version of `cem.py` scored a 100 episode mean of `10.05` (after episode #639,900)
  
 ```
 from __future__ import print_function
