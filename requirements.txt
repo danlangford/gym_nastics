@@ -1,0 +1,4 @@
+pydealer
+gym
+numpy
+six
